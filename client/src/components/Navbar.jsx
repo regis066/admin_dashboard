@@ -28,7 +28,7 @@ const Navbar = ({isSidebarOpen, setIsSidebarOpen, user}) => {
         >
           {/* LEFT SIDE */}
           <FlexBetween>
-            <IconButton onClick={() => setIsSidebarOpen((prev) => !prev)}>
+            <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
               <MenuIcon />
             </IconButton>
             <FlexBetween
@@ -81,13 +81,13 @@ const Navbar = ({isSidebarOpen, setIsSidebarOpen, user}) => {
                 <Box textAlign="left">
                   <Typography
                     fontWeight="bold"
-                    fontSize="0.9rem"
+                    fontSize="0.85rem"
                     sx={{ color: theme.palette.secondary[100] }}
                   >
                     {user.name}
                   </Typography>
                   <Typography
-                    fontSize="0.8rem"
+                    fontSize="0.75rem"
                     sx={{ color: theme.palette.secondary[200] }}
                   >
                     {user.occupation}

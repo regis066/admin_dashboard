@@ -13,8 +13,7 @@ import {
     ListItemIcon,
     ListItemText,
     Typography,
-  useTheme,
-    CssBaseline
+    useTheme,
 
 } from '@mui/material'
 
@@ -124,7 +123,7 @@ const Sidebar = ({
             "& .MuiDrawer-paper": {
               color: theme.palette.secondary[200],
               backgroundColor: theme.palette.background.alt,
-              boxSixing: "border-box",
+              boxSizing: "border-box",
               borderWidth: isNotMobile ? 0 : "2px",
               width: drawerWidth,
             },
@@ -195,9 +194,8 @@ const Sidebar = ({
               })}
             </List>
           </Box>
-
-          <Box position="absolute" bottom="2rem">
             <Divider />
+          <Box position="relative" display="flex" alignItems="center" justifyContent="center">
             <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
               <Box
                 component="img"
