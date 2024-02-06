@@ -10,7 +10,6 @@
       <li>RTQ Query</li>
       <li>Node js</li>
     </ul>
-
     <h2>
     Frontend and Backend hosted on Render hosting Platform
     </h2>
